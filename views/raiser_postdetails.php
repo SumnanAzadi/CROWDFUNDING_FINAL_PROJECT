@@ -17,7 +17,7 @@
 				<button class="default-button"><a href="./raiser_postedit.php?postid=<?= $_GET['postid'] ?>">Edit this post</a></button>
 			</div>
 			<div class="column" style="text-align: end;">
-				<button class="default-button-02"><a href="./raiser_postedit.php?postid=<?= $_GET['postid'] ?>" style="color: #f50c0c; text-decoration: none;">Delete this post</a></button>
+				<button class="default-button-02"><a href="../php/raiser_deletePostController.php?postid=<?= $_GET['postid'] ?>" style="color: #f50c0c; text-decoration: none;">Delete this post</a></button>
 			</div>
 		</div>
 		<div class="postDetails">

@@ -23,9 +23,9 @@
           </h3>
           <input type="text" class="form-control" name="email" placeholder="Email Address" autofocus required /><br>
           <input type="password" class="form-control" name="password" placeholder="Password" required /> <br>
-          <button class=" myButton" name="submit" type="submit">Login</button> 
-        
+          <button class=" myButton" name="submit" type="submit">Login</button>          
         </form>
+        <a href="registration.php">Register as a new user</a>
     </center>  
       </div>
 </body>

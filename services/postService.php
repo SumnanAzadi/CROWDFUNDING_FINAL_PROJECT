@@ -61,17 +61,7 @@ function deletePost($title)
 	} else {
 		return false;
 	}
-<<<<<<< HEAD
-	function addPostByRaiser($post){
-		$con = dbConnection();
-		$sql = "INSERT INTO  posts VALUES('','{$post['title']}','{$post['description']}','{$post['amount']}', '{$post['photo']}', '{$post['id']}','{$post['name']}','{$post['time']}', '{$post['getamount']}' )";
-		if(mysqli_query($con, $sql)){
-			return true;
-		}else{
-			return false;
-		}
-	}
-
+}
 	function getPostsById($id){
 		$con = dbConnection();
 		$sql = "select * from posts where user_id = '{$id}'";
@@ -93,7 +83,14 @@ function deletePost($title)
 			return false;
 		}
 	}
-    ?>
-=======
-}
->>>>>>> upstream/master
+	function deletePostByRaiser($postid){
+		$con = dbConnection();
+		$sql = "delete from posts where post_id={$postid}";
+
+		if(mysqli_query($con, $sql)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+?>
