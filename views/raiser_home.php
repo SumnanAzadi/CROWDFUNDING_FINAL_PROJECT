@@ -27,7 +27,7 @@
 		</div>
 		<div id="result"></div>
         <?php for($i=0; $i != count($posts); $i++ ){ ?>
-      		<div class="home-post" id="home-post">
+      		<div class="home-post">
         		<img width="190px" src="../uploads/<?= $posts[$i]['post_pic'] ?>" alt="Avatar" >
           		<h4><b><?= $posts[$i]['post_title'] ?></b></h4>
           		<p><?= substr($posts[$i]['post_details'], 0, 100). "....." ?></p>
@@ -49,10 +49,8 @@
 		    xhttp.onreadystatechange = function() {
 		      if(this.readyState == 4 && this.status == 200){
 					if(this.responseText != ""){
-						document.getElementById('home-post').style.display = 'none';
 						document.getElementById('result').innerHTML = this.responseText;
 					}else{
-						document.getElementById('home-post').style.display = 'none';
 						document.getElementById('result').innerHTML = "No results";
 					}
 					
